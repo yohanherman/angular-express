@@ -1,0 +1,35 @@
+<table *ngIf = "data">
+    <thead>
+      <tr>
+        <th scope="col">Lastname</th>
+        <th scope="col">Firstname</th>
+        <th scope="col">position</th>
+        <th scope="col">Hiring date</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor =" let item of data">
+        <td>{{ item.lastname}}</td>
+        <td>{{item.firstname}}</td>
+        <td>{{item.position}}</td>
+        <td>{{item.hiring_date}}</td>
+      </tr>
+      <!-- <tr>
+        <th scope="row">Dennis</th>
+        <td>Web accessibility</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <th scope="row">Sarah</th>
+        <td>JavaScript frameworks</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <th scope="row">Karen</th>
+        <td>Web performance</td>
+        <td>36</td>
+      </tr> -->
+    </tbody>
+</table>
+
